@@ -57,7 +57,7 @@ Om de paging strategie mee te geven, gebruikt de consumer de optionele parameter
  Bij **`withCount`** worden __`Totaal aantal elementen`__ en __`Totaal aantal pagina's`__ altijd verplicht terug gegeven. Bovendien bevat de __`link naar de laatste pagina`__ het paginanummer (zie verder voor een voorbeeld). 
 Bij **`noCount`** worden de beide totalen niet terug gegeven en is de link naar de laatste pagina een link zonder paginanummer met de vermelding **`last`** (zie verder voor een voorbeeld).
 
-> Om je te helpen hebben we de definitie van **`page`**, **`pagesize`** en **`paging-strategy`** reeds gemaakt voor jou in de [paging.yaml swagger](/components/paging.yaml) file. In onderstaand voorbeeld tonen we hoe je hier gebruik van kan maken:
+> Om je te helpen hebben we de definitie van **`page`**, **`pagesize`** en **`paging-strategy`** reeds gemaakt voor jou in de [paging.yaml swagger](https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml) file. In onderstaand voorbeeld tonen we hoe je hier gebruik van kan maken:
 ```JSON
   "paths": {
     "/invoices": {
@@ -82,7 +82,7 @@ Bij **`noCount`** worden de beide totalen niet terug gegeven en is de link naar 
 
 Herbruikbare definities van oa. paginatie parameters vind je terug in de [/components](/components) map hier op GitHub. Om er vanuit jouw swagger file ernaar te refereren kan je volgende link gebruiken:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/Page`
+<https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/Page>
 
 Vervang daar waar nodig het deel achter de `#` in deze url.
 
@@ -145,7 +145,7 @@ Dit alles resulteert in volgende structuur in de response message om pagina link
 
 **Tip:** Net zoals de **`page`** en **`pagesize`** parameter, hebben we deze **_links** data structuur definitie ook reeds voorgemaakt op:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Links`
+<https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Links>
 
 
 Bij het ophalen van collections dient bovenstaande structuur steeds aanwezig te zijn in een response message. Dit maakt dat de eigenlijke resources in een wrapper object komen te zitten in het response bericht.  
@@ -190,7 +190,7 @@ Voorbeeld bij `paging-strategy=noCount` :
 
 **Tip:** Deze **_page** data structuur definitie is reeds voorgemaakt op:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Page`
+<https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Page>
 
 
 Alle aspecten van paginatie samengevoegd geeft dit volgende response wrapper message voor paginatie:

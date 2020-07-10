@@ -122,11 +122,9 @@ POST [/\<groepering>]*/\<event> waarbij \<event> eindigt op een voltooid deelwoo
 
 ### Langdurende operaties
 
--   asynchroon uitvoeren
--   HTTP response code 202 met in Location header een tijdelijke URI
--   consumer polt op tijdelijke URI naar de status
--   als taak is uitgevoerd, dan response code 303 met in Location header een definitieve URI van de resource.
--   De definitieve URI kan worden gebruikt om de resource op te vragen.
+-   Voer asynchroon uit
+-   Gebruik minimaal 202 Accepted
+-   Implementeer eventueel een polling mechanisme voor statusopvolging
 
 ### Swagger
 
