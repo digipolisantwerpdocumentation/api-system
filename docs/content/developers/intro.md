@@ -4,7 +4,7 @@ In dit hoofdstuk tonen we de API requirements. Het zijn geen richtlijnen maar ef
 
 Om je hierbij te helpen, zijn er verschillende hulpmiddelen zoals de [Validator](/content/tools/validate.md) en de [Generator](/content/tools/generators.md).
 
-We hebben al onze regels een identificatie gegeven, zo is het makkelijker om te refereren naar de juiste regel, bijvoorbeeld: <span class="rule-ref">R-TL-001</span>
+We hebben al onze regels een identificatie gegeven, zo is het makkelijker om te refereren naar de juiste regel, bijvoorbeeld: <span class="rule-ref">R-TL-001</span> :id=R-TL-001
 
 ### Inhoud
 

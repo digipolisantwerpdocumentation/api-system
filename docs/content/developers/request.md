@@ -1,7 +1,7 @@
 ## Request
 
 ### Request body & query parameters
-#### Verstuur resource representaties via de request body <span class="rule-ref">R-RQ-001</span>
+#### Verstuur resource representaties via de request body <span class="rule-ref">R-RQ-001</span> :id=R-RQ-001
 Resource representations dienen steeds in de request body te worden doorgestuurd en nooit via query parameters.
 
 Query parameters worden steeds gebruikt om bepaalde functionaliteiten zoals paginatie, filtering, sortering, etc aan te spreken.  
@@ -16,7 +16,7 @@ Query parameters worden steeds gebruikt om bepaalde functionaliteiten zoals pagi
 Bovenstaand voorbeeld is niet enkel onleesbaar, het laat ook niet toe om hiërarchieën op een eenvoudige manier op te nemen in de representatie.
 
 ### HTTP verbs
-#### Gebruik HTTP verbs correct en volgens RFC7231 <span class="rule-ref">R-HV-001</span>
+#### Gebruik HTTP verbs correct en volgens RFC7231 <span class="rule-ref">R-HV-001</span> :id=R-HV-001
 Gebruik steeds de juiste HTTP verbs voor de bijhorende request zoals weergegeven in onderstaande tabel. HTTP verbs moeten in lijn zijn
 met [RFC7231](https://tools.ietf.org/html/rfc7231).
 
@@ -41,7 +41,7 @@ Veronderstel dat een consumer een update wil doen van een resource door middel v
 **Optionele velden in de resource representatie dienen op hun default waarde ingesteld te worden op de backend indien deze niet worden
 opgegeven in de request.**
 
-#### Gebruik HTTP verb PATCH volgens RFC7386 of RFC6902 <span class="rule-ref">R-HV-002</span>
+#### Gebruik HTTP verb PATCH volgens RFC7386 of RFC6902 <span class="rule-ref">R-HV-002</span> :id=R-HV-002
 - eenvoudige wijzigingen : [RFC7386](https://tools.ietf.org/html/rfc7386)
 - complexe wijzigingen : [RFC6902](https://tools.ietf.org/html/rfc6902)
 

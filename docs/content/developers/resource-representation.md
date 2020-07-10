@@ -2,7 +2,7 @@
 
 ### Taal
 
-#### API's in het Engels <span class="rule-ref">R-TL-001</span>
+#### API's in het Engels <span class="rule-ref">R-TL-001</span> :id=R-TL-001
 
 Om onze API's zo breed mogelijk bruikbaar te maken worden ze in het **Engels** gemaakt.
 
@@ -10,44 +10,44 @@ Om onze API's zo breed mogelijk bruikbaar te maken worden ze in het **Engels** g
 
 Hanteer onderstaande conventies voor berichten die JSON als payload formaat hebben.
 
-#### Gebruik steeds dubbele quotes bij keys <span class="rule-ref">R-JS-001</span>
+#### Gebruik steeds dubbele quotes bij keys <span class="rule-ref">R-JS-001</span> :id=R-JS-001
 ``` json
 "company" : "Digipolis"
 ```
 
-#### Gebruik steeds dubbele quotes bij string values <span class="rule-ref">R-JS-002</span>
+#### Gebruik steeds dubbele quotes bij string values <span class="rule-ref">R-JS-002</span> :id=R-JS-002
 ``` json
 "company" : "Digipolis"
 ```
 
-#### Gebruik steeds camelCase om keys weer te geven <span class="rule-ref">R-JS-003</span>
+#### Gebruik steeds camelCase om keys weer te geven <span class="rule-ref">R-JS-003</span> :id=R-JS-003
 ``` json
 "addressLine" : "Generaal Armstrongweg"
 ```
 
-#### Gebruik geen dots "." in keys <span class="rule-ref">R-JS-004</span>
+#### Gebruik geen dots "." in keys <span class="rule-ref">R-JS-004</span> :id=R-JS-004
 ``` json
 "address.street" : "Generaal Armstrongweg" wordt NIET toegelaten (gebruik dan hiërarchieën)
 ```
 
-#### Keys mogen niet starten met cijfers <span class="rule-ref">R-JS-005</span>
+#### Keys mogen niet starten met cijfers <span class="rule-ref">R-JS-005</span> :id=R-JS-005
 Dit verlaagt immers de leesbaarheid.
 ``` json
 "5street" : "Generaal Armstrongweg" wordt NIET toegelaten
 ```
 
-#### Verwijder `null` waardes uit de resource representatie indien deze geen betekenis hebben <span class="rule-ref">R-JS-006</span>
+#### Verwijder `null` waardes uit de resource representatie indien deze geen betekenis hebben <span class="rule-ref">R-JS-006</span> :id=R-JS-006
 ``` json
 "middleName" : null
 ```
 
-##### Toon lege waardes in de resource representatie <span class="rule-ref">R-JS-007</span>
+##### Toon lege waardes in de resource representatie <span class="rule-ref">R-JS-007</span> :id=R-JS-007
 ``` json
 "middleName" : "",
 "orders" : []
 ```
 
-#### Encapsuleer arrays steeds in een object <span class="rule-ref">R-JS-008</span>
+#### Encapsuleer arrays steeds in een object <span class="rule-ref">R-JS-008</span> :id=R-JS-008
 Dit omdat bepaalde frameworks niet goed overweg kunnen met native arrays
 ``` json
 {
@@ -69,7 +69,7 @@ Dit omdat bepaalde frameworks niet goed overweg kunnen met native arrays
 ```
 
 ### Datums en timestamps
-#### Formatteer datums en timestamps volgens RFC339 <span class="rule-ref">R-DT-001</span>
+#### Formatteer datums en timestamps volgens RFC339 <span class="rule-ref">R-DT-001</span> :id=R-DT-001
 Formatteer datums en timestamps steeds volgens [RFC3339](https://www.ietf.org/rfc/rfc3339.txt). JSON definieert immers geen standaard formaat voor datums en timestamps.
 
 > RFC3339 volgt de ISO 8601 standaard maar heeft enkele optimalisaties voor het internet en machine to machine communicatie. Bijgevolg is deze ideaal voor REST API's)
@@ -93,14 +93,14 @@ Hier enkele basis regels voor het gebruik van datum en/of tijd in jouw API:
 
 
 ### Durations
-#### Formatteer durations volgens ISO8601 <span class="rule-ref">R-DU-001</span>
+#### Formatteer durations volgens ISO8601 <span class="rule-ref">R-DU-001</span> :id=R-DU-001
 Durations worden geformatteerd volgens [ISO8601](https://en.wikipedia.org/wiki/ISO_8601).
 ``` prettyprint
 "duration" : "P0003-04-06T12:00:00" (3 jaar, 4 maanden, 6 dagen, 12 uur)
 ```
 
 ### Geospatiale data
-#### Formatteer geospatiale data volgens RFC7946 <span class="rule-ref">R-GS-001</span>
+#### Formatteer geospatiale data volgens RFC7946 <span class="rule-ref">R-GS-001</span> :id=R-GS-001
 Alle geospatiale data wordt steeds geformatteerd volgens [RFC7946](https://tools.ietf.org/html/rfc7946)
 
 Deze standaard laat toe om van eenvoudige locatie objecten in een longitude, latitude array...
@@ -137,7 +137,7 @@ tot meer complexe geospatiale objecten zoals bijvoorbeeld een polygoon (en nog v
 ```
 
 ### Hiërarchie
-#### Structureer resource hiërarchisch ipv vlak <span class="rule-ref">R-HA-001</span>
+#### Structureer resource hiërarchisch ipv vlak <span class="rule-ref">R-HA-001</span> :id=R-HA-001
 Kies steeds voor een hiërarchisch gestructureerde resource representatie in plaats van een vlakke structuur. Een hiërarchische voorstelling biedt als grote voordeel dat het overzichtelijker en duidelijker is voor resources met een groot aantal velden. Daarnaast biedt het als grote voordeel het hergebruik van entiteiten over APIs heen.
 
 Als algemene richtlijn kan je stellen dat wanneer het aantal velden \> 15 je best naar een hiërarchische structuur kan overgaan indien dit meer duidelijkheid schept.

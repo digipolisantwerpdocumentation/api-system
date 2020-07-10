@@ -4,7 +4,7 @@ Naast een correcte weergave van fouten via response codes is het vaak nuttig om 
 Denk hierbij aan functionele fouten die op een correcte en uniforme manier door de API consumer dienen te worden geïnterpreteerd.
 
 ### Exception shielding
-#### Gebruik Exception Shielding <span class="rule-ref">R-ES-001</span>
+#### Gebruik Exception Shielding <span class="rule-ref">R-ES-001</span> :id=R-ES-001
 Belangrijk om te benadrukken is het principe van exception shielding.
 
 Bij exception shielding willen we vermijden dat interne technische foutboodschappen naar consumers toe worden blootgesteld door deze af te schermen. Interne implementatie details van een API dienen zoveel mogelijk te worden afgeschermd aangezien ze security gewijs een
@@ -18,7 +18,7 @@ Wat wel wenselijk is, is een algemeen technische fout type die we naar de consum
 afschermt. De API consumer kan gebruik maken van de identifier in dit fout type om bijkomende informatie te bekomen.
 
 ### Error model
-#### Gebruik het door Digipolis vastgelegde error model <span class="rule-ref">R-EM-001</span>
+#### Gebruik het door Digipolis vastgelegde error model <span class="rule-ref">R-EM-001</span> :id=R-EM-001
 Algemeen kan worden aangenomen dat een error response minimaal volgende informatie dient te bevatten:
 
 -   Een unieke identifier waarmee de foutboodschap kan worden teruggevonden in logs en/of andere operationele systemen
@@ -107,7 +107,7 @@ In sommige gevallen kan het nuttig zijn om **extra info** mee te geven zodat de 
 ```
 
 ### HTTP status codes en error model
-#### Gebruik de correcte status codes en error responses <span class="rule-ref">R-EC-001</span>
+#### Gebruik de correcte status codes en error responses <span class="rule-ref">R-EC-001</span> :id=R-EC-001
 Deze sectie beschrijft welke HTTP status codes vergezeld dienen te worden van een bijhorend error object
 
 HTTP status code           | Betekenis                                                                                                                                   | Error object                  

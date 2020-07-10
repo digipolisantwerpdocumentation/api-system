@@ -6,7 +6,7 @@ Als algemene richtlijn geldt dat, indien filtering gewenst is, dit steeds dient 
 Elke resource in een collection is uniek identificeerbaar via een unieke sleutel (id).
 De unieke sleutel kan leesbaar zijn zoals bv een rijksregisternummer, maar kan ook een id zijn (bv UUID).
 
-#### Filter op een resource via id <span class="rule-ref">R-FR-001</span>
+#### Filter op een resource via id <span class="rule-ref">R-FR-001</span> :id=R-FR-001
 Filteren op id, dwz. selectie van een specifieke resource binnen de collection op basis van een unieke identifier, gebeurt door deze mee op te nemen als node in de URI en niet door middel van een query parameter.
 
 Filteren op id's doe je als volgt:
@@ -14,7 +14,7 @@ Filteren op id's doe je als volgt:
 GET /{resource}/{id}
 GET /partners/2365
 ```
-#### Filter op een resource via andere unieke sleutel <span class="rule-ref">R-FR-002</span>
+#### Filter op een resource via andere unieke sleutel <span class="rule-ref">R-FR-002</span> :id=R-FR-002
 Filteren op een andere unieke sleutel gebeurt op dezelfde manier als filteren op een id.
 
 Filteren op een andere unieke sleutel doe je als volgt:
@@ -23,7 +23,7 @@ GET /{resource}/{id}
 GET /partners/93051822361  # rijksregisternr
 ```
 
-#### Gebruik geen gecombineerde sleutels voor een unieke sleutel <span class="rule-ref">R-FR-003</span>
+#### Gebruik geen gecombineerde sleutels voor een unieke sleutel <span class="rule-ref">R-FR-003</span> :id=R-FR-003
 Het is niet toegelaten om via een combinatie van sleutels een unieke sleutel voor een resource te definiëren.
 
 > [!DANGER|icon:fas fa-code|label:Fout]
@@ -33,7 +33,7 @@ Het is niet toegelaten om via een combinatie van sleutels een unieke sleutel voo
 > ```
 > gebruik je dus NIET
 
-#### Filter op een resource via query parameters <span class="rule-ref">R-FR-004</span>
+#### Filter op een resource via query parameters <span class="rule-ref">R-FR-004</span> :id=R-FR-004
 Filteren op individuele velden is mogelijk door voor elk veld in de resource representatie, dat filtering implementeert, een unieke query parameter te definiëren.
 
 **Opgelet, dit doen we niet voor id's.**  
@@ -65,7 +65,7 @@ https://api-gateway/digipolis/business-party/v1/business-parties?city=New%20York
 Indien de query parameter waarmee je gaat filteren meerdere waarden kan bevatten, dan gebruik je volgende conventie (comma separated) : **resource?parameter=waarde1,waarde2,waarde3** 
 
 ### Filteren op resource representatie
-#### Filter op een resource representatie via de `fields` query parameter <span class="rule-ref">R-FP-001</span>
+#### Filter op een resource representatie via de `fields` query parameter <span class="rule-ref">R-FP-001</span> :id=R-FP-001
 Een API dient steeds een minimale hoeveelheid informatie terug te sturen in zijn response. Soms is het wenselijk dat een API consumer slechts een subset (1 of meerdere velden) van een resource representatie wenst op te vragen. Dit kan door middel van een reserved query parameter genaamd `fields`.
 
 Deze query parameter definieert een door middel van komma's gescheiden lijst van velden dewelke de API consumer wenst te verkrijgen.
@@ -127,7 +127,7 @@ HTTP Response code 404 (city wordt niet gevonden)
 ```
 
 ### Sorteren
-#### Sorteer response door middel van de `sort` query parameter <span class="rule-ref">R-SR-001</span>
+#### Sorteer response door middel van de `sort` query parameter <span class="rule-ref">R-SR-001</span> :id=R-SR-001
 Sorteren van antwoorden gebeurt steeds door middel van de reserved query parameter `sort`.
 
 Standaard worden resultaten in oplopende volgorde gesorteerd. Indien aflopend gesorteerd dient te worden, dan dient "-" te worden toegevoegd vooraan de parameter dewelke aflopend gesorteerd dient te worden. Indien gesorteerd dient te worden op meerdere parameters, dan kan dit door deze met komma's van elkaar te scheiden.
