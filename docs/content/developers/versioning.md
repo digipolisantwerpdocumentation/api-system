@@ -51,7 +51,7 @@ In dit versioneringsmodel definieert een API versie een verzameling van resource
 Een versie van een resource wordt impliciet voorgesteld door middel van zijn representatie en state. Een rechtstreeks gevolg hiervan is dat resources zelf nooit expliciet geversioneerd worden.
 
 In dit versioning model versioneren we steeds elke API als volgt:
-``` prettyprint
+``` 
 https://{hostname}/{namespace}/{vx}/{resource-URI}
 ```
 

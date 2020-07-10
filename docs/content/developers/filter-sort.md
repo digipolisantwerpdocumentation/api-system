@@ -26,11 +26,12 @@ GET /partners/93051822361  # rijksregisternr
 #### Gebruik geen gecombineerde sleutels voor een unieke sleutel <span class="rule-ref">R-FR-003</span>
 Het is niet toegelaten om via een combinatie van sleutels een unieke sleutel voor een resource te definiëren.
 
-``` http
-GET /{resource}/{id}/{subid}
-GET /partners/man/001
-gebruik je dus NIET
-```
+> [!DANGER|icon:fas fa-code|label:Fout]
+> ``` http
+> GET /{resource}/{id}/{subid}
+> GET /partners/man/001
+> ```
+> gebruik je dus NIET
 
 #### Filter op een resource via query parameters <span class="rule-ref">R-FR-004</span>
 Filteren op individuele velden is mogelijk door voor elk veld in de resource representatie, dat filtering implementeert, een unieke query parameter te definiëren.
@@ -42,7 +43,7 @@ Belangrijk hierbij is dat de structuur van de query parameter zo vlak mogelijk w
 Indien je op andere velden dan de id's wil filteren, dan dienen de query parameters zo te zijn opgesteld dat deze ondubbelzinnig kunnen worden geinterpreteerd.
 
 Zo kies je bijvoorbeeld best voor `city` ipv `address-city` als query parameter indien je wil filteren op onderstaand antwoord:
-```json
+``` json
 {
   "company": "Google",
   "website": "http://www.google.com/",
@@ -72,7 +73,7 @@ Deze query parameter definieert een door middel van komma's gescheiden lijst van
 De naam van deze velden dient net zoals bij resource filtering zo te zijn gekozen dat deze een zo vlak mogelijke structuur aanhouden zonder dat hierbij business betekenis verloren gaat. Een veld dat men wenst te verkrijgen wordt geëncapsuleerd door het bovenliggende object en ().
 
 vb. als de normale response het volgende is :
-```json
+``` json
 {
   "company": "Google",
   "website": "http://www.google.com/",
@@ -104,7 +105,7 @@ https://api-gateway/digipolis/business-party/v1/business-parties?fields=company,
 https://api-gateway/digipolis/business-party/v1/business-parties?fields=company,address
 ```
 
-```json
+``` json
 {
   "company": "Google",
   "address": {

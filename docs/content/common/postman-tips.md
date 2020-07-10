@@ -25,7 +25,7 @@ Er zijn verschillende plaatsen waar variabelen tot stand komen
 
 Laten we een voorbeeld toevoegen:
 
-```js
+``` json
 "info": {
         "title": "Deliverable Management API",
         "version": "1.0.2",
@@ -63,7 +63,7 @@ Goed nieuws. In de recentste versies van Postman hoef je niets meer te doen. In 
 
 Het komt erop neer dat je variabele stukken in het pad - gewoonlijk voor een **id** - tussen brackets `{}` zet.
 
-```js
+``` json
     "paths": {
         "/deliverables/{deliverableid}/addons": {
             "get": {
@@ -78,7 +78,7 @@ Nog wat verderop in het path heb je het query gedeelte, ofwel alles achter het v
 
 Als je onderstaande syntax hanteert, zal Postman de parameter `q` automatisch als variabele herkennen bij de import.
 
-```js
+``` json
     "paths": {
         "/addons": {
             "get": {
@@ -99,7 +99,7 @@ Als je onderstaande syntax hanteert, zal Postman de parameter `q` automatisch al
 ### 4. header variable ###
 In hetzelfde [Parameters Object](https://github.com/OAI/OpenAPI-Specification/blob/master/versions/2.0.md#parameterObject) van de Swagger spec kan je ook parameters definieren voor in de header. Ook deze gaat Postman herkennen als variabele.
 
-```js
+``` json
     "paths": {
         "/addons": {
             "get": {
@@ -121,7 +121,7 @@ In hetzelfde [Parameters Object](https://github.com/OAI/OpenAPI-Specification/bl
 
 De meeste api's verwachten een variabele voor de apikey en de tenant in de header. Als we deze twee header variabelen al toevoegen bij elke operatie, wordt het weeral wat makkelijker:
 
-```js
+``` json
     "paths": {
         "/addons": {
             "get": {
@@ -149,7 +149,7 @@ De meeste api's verwachten een variabele voor de apikey en de tenant in de heade
 
 Nog makkelijker is om deze 2 parameters globaal te definiëren in jou swagger file en deze bij elke operatie te refereren:
 
-```js
+``` json
     "paths": {
         "/addons": {
             "get": {

@@ -55,7 +55,7 @@ Daarnaast worden volgende velden ook in het antwoord verwacht:
 
 Dit resulteert in volgend voorbeeld error response:  
 
-```json
+``` json
 {
 "type": "http://api-gateway/digipolis/payment/v1/payments/FE0032",
 "title": "You do not have enough credit.",
@@ -69,7 +69,7 @@ Hierbij zijn identifier en code velden die we in elk error response verwachten. 
 
 Toegepast op bovenstaand error model kan onderstaande structuur gehanteerd worden voor technische fouten:  
 
-```json
+``` json
 {
 "type": "http://api-gateway/digipolis/payment/v1/payments/technical",
 "title": "A technical error occured",
@@ -83,7 +83,7 @@ Aangezien het principe van exception shielding wordt gehanteerd wordt slechts 1 
 
 In sommige gevallen kan het nuttig zijn om **extra info** mee te geven zodat de consumer beter begrijpt wat het probleem is, zoals bvb bij validatiefouten :
 
-```json
+``` json
 {
 "type": "http://api-gateway/digipolis/payment/v1/payments/validation-error",
 "title": "There are validation errors.",

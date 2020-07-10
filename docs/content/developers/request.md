@@ -6,10 +6,12 @@ Resource representations dienen steeds in de request body te worden doorgestuurd
 
 Query parameters worden steeds gebruikt om bepaalde functionaliteiten zoals paginatie, filtering, sortering, etc aan te spreken.  
 **Query parameters worden bijgevolg nooit gebruikt om resource representaties weer te geven.**
-``` http
-POST /business-parties?company=Google&website=http://www.google.com/&addressLine1=111 8th Ave&addressLine2=4th Floor&state=NY&city=New York&zip=10011
-gebruik je dus NIET
-```
+
+> [!DANGER|icon:fas fa-code|label:Fout]
+> ``` http
+> POST /business-parties?company=Google&website=http://www.google.com/&addressLine1=111 8th Ave&addressLine2=4th Floor&state=NY&city=New York&zip=10011
+> ```
+> gebruik je dus NIET
 
 Bovenstaand voorbeeld is niet enkel onleesbaar, het laat ook niet toe om hiërarchieën op een eenvoudige manier op te nemen in de representatie.
 
@@ -68,7 +70,7 @@ GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contra
 -   Haalt contract op met id 42 dat behoort bij business-party met id 6532. Door het feit dat contracts een subresource is van
     business-parties betekent dit dat beiden met elkaar gerelateerd zijn en dat het hier de contracts betreft van een welbepaalde
     business-party.
-``` prettyprint
+``` http
 GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contracts/42
 ```
 
@@ -100,7 +102,7 @@ PUT https://api-gateway/digipolis/business-party/v1/business-parties/6532/contra
 Voor elk van onderstaande voorbeelden bevat de request body steeds de volledige resource representatie
 
 -   Aanmaken van een nieuwe business-party. Merk op dat de post steeds gebeurt op de collection en niet op een individuele business party. Het id wordt hier immers niet meegegeven met de request, maar wordt bepaald tijdens resource creatie en meegegeven in het response bericht.
-``` prettyprint
+``` http
 POST https://api-gateway/digipolis/business-party/v1/business-parties
 ```
 

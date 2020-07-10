@@ -58,7 +58,7 @@ Om de paging strategie mee te geven, gebruikt de consumer de optionele parameter
 Bij **`noCount`** worden de beide totalen niet terug gegeven en is de link naar de laatste pagina een link zonder paginanummer met de vermelding **`last`** (zie verder voor een voorbeeld).
 
 > Om je te helpen hebben we de definitie van **`page`**, **`pagesize`** en **`paging-strategy`** reeds gemaakt voor jou in de [paging.yaml swagger](https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml) file. In onderstaand voorbeeld tonen we hoe je hier gebruik van kan maken:
-```JSON
+``` json
   "paths": {
     "/invoices": {
       "get": {
@@ -121,7 +121,7 @@ Digipolis wordt gekozen om volgende link objecten te gebruiken voor paginatie:
 De HAL specificatie definieert dat elk van deze link objecten verplicht de href property moet hebben. Daarnaast zijn er ook nog een aantal optionele properties gedefinieerd binnen de standaard. Deze hebben geen toegevoegde waarde bij het weergeven van pagina informatie en worden dan ook niet toegevoegd voor elk van bovenvermelde link objecten.
 
 Dit alles resulteert in volgende structuur in de response message om pagina links weer te geven.
-```json
+``` json
 {
  "_links": {
    "self": {
@@ -152,7 +152,7 @@ Bij het ophalen van collections dient bovenstaande structuur steeds aanwezig te 
 Dit kan door middel van het **\_embedded** reserved keyword. Dit \_embedded object bestaat uit property namen dewelke een link relation
 type voorstellen en wiens waarde 1 of meerdere resource objecten zijn.  
 Dit resulteert in volgende structuur.
-```json
+``` json
 {
 "_embedded": {
        "resourceList": [{
@@ -167,7 +167,7 @@ Het **\_page** reserved keyword vormt geen onderdeel van de HAL specificatie, ma
 een indicatie te krijgen van de huidige paginanummer, aantal elementen per pagina, het totaal aantal pagina's en het totaal aantal elementen en vereenvoudigt de bewerkingen langs consumer kant om deze informatie te bekomen. Bij **`paging-strategy=noCount`** worden `totalElements` en `totalPages` weg gelaten.  
   
 Voorbeeld bij `paging-strategy=withCount` : 
-```json
+``` json
 {
 "_page": {
     "size": 10,
@@ -179,7 +179,7 @@ Voorbeeld bij `paging-strategy=withCount` :
 ``` 
   
 Voorbeeld bij `paging-strategy=noCount` : 
-```json
+``` json
 {
 "_page": {
     "size": 10,
@@ -194,7 +194,7 @@ Voorbeeld bij `paging-strategy=noCount` :
 
 
 Alle aspecten van paginatie samengevoegd geeft dit volgende response wrapper message voor paginatie:
-```json
+``` json
 {
    "_links": {
      "self": {
@@ -243,7 +243,7 @@ https://api-gateway/digipolis/business-party/v1/business-parties?paging-strategy
 ```
 
 Geeft als resultaat
-```json
+``` json
 {
    "_links": {
      "self": {
@@ -276,7 +276,7 @@ Geeft als resultaat
 
 De swagger voor bovenstaand voorbeeld gebruik makende van de generieke definities ziet er als volgt uit:
 
-```JSON
+``` json
       "MyResources": {
         "type": "object",
         "properties": {
@@ -306,7 +306,7 @@ https://api-gateway/digipolis/business-party/v1/business-parties?paging-strategy
 ```
 
 Geeft als resultaat
-```json
+``` json
 {
    "_links": {
      "self": {

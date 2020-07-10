@@ -16,7 +16,7 @@ Merk op dat naam geen ‘API’ suffix heeft, we schrijven dus niet “Sales Inv
 
 Naast de naam, heeft je API een versienummer nodig, hiervoor gebruiken we de [Semver 2](https://semver.org/) standard. Tijdens het ontwerpen (nog voor het effectief live gaan dus) werk je met versie `0.x.y`. Vanaf dat je de API effectief gaat publiceren, kan je gebruik maken van  major `1.x.y`.
 
-```yaml
+``` yaml
 openapi: 3.0.0
 info:
   version: '0.0.2'
@@ -32,7 +32,7 @@ Als we data willen opvragen van een REST API, dan krijgen we meestal data in de 
 Neem even het voorbeeld van een `Product` uit het analyse voorbeeld.
 
 >[!NOTE|icon:fas fa-info-circle|label:Product Entiteit]
->```plantuml
+>``` plantuml
 >@startuml
 >class Product{
 >  omschrijving: string
@@ -72,7 +72,7 @@ Er zijn 3 setjes van data elks ontsloten door accolades wat aangeeft dat omschri
 
 Een OAS document beschrijft de API, het is niet de API zelf. Dus in het OAS document gaan we de vorm van de data beschrijven en dus niet de data zelf. De vorm van bovenstaand Product entiteit beschrijven we aan de hand van een schema als volgt:
 
-```yaml
+``` yaml
 components:
   schemas:
     Product:
@@ -90,7 +90,7 @@ components:
 
 Zoals je kan zien worden de schema’s van de data modellen genoteerd in het `components` gedeelte. Dit hoeft niet maar is wel aangewezen, zo kan je eenvoudiger het data model hergebruiken in verschillende scenario's. In het volgende voorbeeld maken we de `InvoiceLine` entiteit die een verwijzing heeft naar de `Product` entiteit.
 
-```yaml
+``` yaml
 components:
   schemas:
     InvoiceLine:
@@ -119,7 +119,7 @@ Zie je dat de `InvoiceLine` nu 2 properties heeft, één voor het aantal, en é�
 
 
 >[!NOTE|icon:fas fa-info-circle|label:Product Entiteit]
->```plantuml
+>``` plantuml
 >@startuml
 >class Factuurlijn{
 >  aantal: integer
@@ -406,7 +406,7 @@ Visueel komt dit neer op:
 
 Even terug naar de request van de afnemer:
 
-```http
+``` http
 GET /invoices?page=1&pagesize=10&customer-id=123
 ```
 
@@ -604,7 +604,7 @@ Hiervoor moeten we natuurlijk ook een InvoiceLines data model beschrijven:
 
 De volgende vraag is natuurlijk, hoe ver en diep kan je gaan?  Kan je ook de producten van de factuurlijnen op deze manier opvragen?
 
-```http
+``` http
 GET /invoices/INV10034/invoicelines/1/products
 ```
 
@@ -615,7 +615,7 @@ Of is dit een brug te ver? Een hulpmiddel om deze beslissing te nemen is het ver
 
 Indien het een aggregatie is, wat het geval is voor producten, kan je beter opnieuw starten als volgt
 
-```http
+``` http
 GET /products
 ```
 
@@ -695,7 +695,7 @@ Er zijn 2 manieren om resources aan te passen:
 
 Laten we beginnen met een eenvoudige kleine aanpassing. Hiervoor gebruiken we de PATCH methode. We houden het eenvoudig en hanteren de [JSON Merge Patch](https://tools.ietf.org/html/rfc7386) stijl. Dit komt erop neer dat we een attribuut opgeven van de invoice resource met een nieuwe waarde. We geven dit mee met de PATCH request
 
-```http
+``` http
 PATCH /invoices/INV10036
 ```
 
@@ -739,7 +739,7 @@ Als response komt er een HTTP 204 terug, wat wil zeggen dat de aanpassing gelukt
 
 We kunnen ook het volledige factuur aanpassen door gebruik te maken van de PUT methode. De YAML definitie in ons OAS document lijkt sterk op die van een POST, met dat verschil dat we in het path ook de id meegeven.
 
-```http
+``` http
 PUT /invoices/INV10036
 ```
 
@@ -802,7 +802,7 @@ Het antwoord kan ofwel HTTP 204 zijn, de aanpassing is gelukt. Het kan ook een H
 
 Een factuur verwijderen is misschien wel één van de eenvoudigste om te beschrijven in het OAS document. De afnemer gebruikt de DELETE methode in een request, en geeft het id mee van de te verwijderen resource:
 
-```http
+``` http
 DELETE /invoices/INV10036
 ```
 

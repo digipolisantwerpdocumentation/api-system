@@ -11,45 +11,45 @@ Om onze API's zo breed mogelijk bruikbaar te maken worden ze in het **Engels** g
 Hanteer onderstaande conventies voor berichten die JSON als payload formaat hebben.
 
 #### Gebruik steeds dubbele quotes bij keys <span class="rule-ref">R-JS-001</span>
-```json
+``` json
 "company" : "Digipolis"
 ```
 
 #### Gebruik steeds dubbele quotes bij string values <span class="rule-ref">R-JS-002</span>
-```json
+``` json
 "company" : "Digipolis"
 ```
 
 #### Gebruik steeds camelCase om keys weer te geven <span class="rule-ref">R-JS-003</span>
-```json
+``` json
 "addressLine" : "Generaal Armstrongweg"
 ```
 
 #### Gebruik geen dots "." in keys <span class="rule-ref">R-JS-004</span>
-```json
+``` json
 "address.street" : "Generaal Armstrongweg" wordt NIET toegelaten (gebruik dan hiërarchieën)
 ```
 
 #### Keys mogen niet starten met cijfers <span class="rule-ref">R-JS-005</span>
 Dit verlaagt immers de leesbaarheid.
-```json
+``` json
 "5street" : "Generaal Armstrongweg" wordt NIET toegelaten
 ```
 
 #### Verwijder `null` waardes uit de resource representatie indien deze geen betekenis hebben <span class="rule-ref">R-JS-006</span>
-```json
+``` json
 "middleName" : null
 ```
 
 ##### Toon lege waardes in de resource representatie <span class="rule-ref">R-JS-007</span>
-```json
+``` json
 "middleName" : "",
 "orders" : []
 ```
 
 #### Encapsuleer arrays steeds in een object <span class="rule-ref">R-JS-008</span>
 Dit omdat bepaalde frameworks niet goed overweg kunnen met native arrays
-```json
+``` json
 {
    "adresses":[
       {
@@ -74,7 +74,7 @@ Formatteer datums en timestamps steeds volgens [RFC3339](https://www.ietf.org/rf
 
 > RFC3339 volgt de ISO 8601 standaard maar heeft enkele optimalisaties voor het internet en machine to machine communicatie. Bijgevolg is deze ideaal voor REST API's)
 
-```json
+``` json
 "finishedAt" : "2012-01-01T01:00:00+01:00"
 ```
 

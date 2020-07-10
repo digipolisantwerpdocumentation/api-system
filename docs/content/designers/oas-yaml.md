@@ -46,7 +46,7 @@ Zoals eerder vermeld, wordden API's uitgeschreven volgens de [Open API Specifica
 
 Een voorbeeld - uit de [analyse](/content/designers/analysis) - van z'n OAS document ziet er  als volgt uit:
 
-```yaml
+``` yaml
 openapi: 3.0.0
 info:
   version: '1.0.1'
@@ -77,7 +77,7 @@ paths:
 
 Je ziet een `info` luik alsook een `servers` en `paths` onderdeel in het voorbeeld hierboven, net zoals de de basis blokken van de OAS structuur. Je kan dit document op 2 manieren schrijven, ofwel in YAML ofwel in JSON. Beide kunnen, het voorbeeld van hierboven is in YAML, hetzelfde voorbeeld in JSON is hieronder.
 
-```json
+``` json
 {
   "openapi": "3.0.0",
   "info": {
@@ -131,7 +131,7 @@ Beide schrijfwijzen kunnen verwerkt worden door computers, het YAML formaat heef
 
 [YAML formaat](https://en.wikipedia.org/wiki/YAML) werkt met `key-value pairs`. Je geeft de naam van een key en vervolgens de waarde erachter.
 
-```yaml
+``` yaml
   ...
   title: 'Sales Invoice'
   ...
@@ -139,7 +139,7 @@ Beide schrijfwijzen kunnen verwerkt worden door computers, het YAML formaat heef
 
 Key-value pairs die behoren tot een collectie worden samen gevormd door opeenvolgende regels met dezelfde insprong  (lees: door 2 of meerdere spaties vooraan de regel toe te voegen). Zo zie je dat version, title en description behoren tot de info collection.
 
-```yaml
+``` yaml
 ...
 info:
   version: '1.0.1'
@@ -150,7 +150,7 @@ info:
 
 Tot slot zijn er lijsten, deze kan je herkennen door het `-` teken vooraan elke lijn.
 
-```yaml
+``` yaml
       ...
       tags:
         - Invoicing

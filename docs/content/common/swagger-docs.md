@@ -43,7 +43,7 @@ Geef `contact` informatie op waarmee de ontwikkelaar iets is. De info van een ef
 
 In plaats van:
 
-```
+``` json
     "info": {
         "version": "1.0.0",
         "title": "Form API",
@@ -55,7 +55,7 @@ In plaats van:
 
 kan je beter:
 
-```
+``` json
     "info": {
         "version": "1.0.0",
         "title": "Form Engine API",

@@ -18,7 +18,7 @@ In veel analyse technieken zoals [Database Normalization](https://en.wikipedia.o
 In bovenstaande tekst vinden we volgende entiteiten terug:
 
 >[!NOTE|icon:fas fa-info-circle|label:Entiteiten]
->```plantuml
+>``` plantuml
 >@startuml
 >class Factuur 
 >class Factuurlijn
@@ -34,7 +34,7 @@ Neem de zin *"Een factuur bevat een logo, een uniek nummer, is steeds voor één
 Hieruit lezen we dat een factuur een klant, en factuurlijnen heeft. Er is dus een relatie tussen beiden. Daarnaast zien we ook dat er een relatie is tussen een factuurlijn en een product.
 
 >[!NOTE|icon:fas fa-info-circle|label:Relaties]
->```plantuml
+>``` plantuml
 >@startuml
 >class Factuur 
 >class Factuurlijn
@@ -74,7 +74,7 @@ Deze zaken drukken we uit via aggregatie en compositie. Maw,
 Dit wordt weergegeven door open of gesloten ruiten in het diagram
 
 >[!NOTE|icon:fas fa-info-circle|label:Aggregatie en compositie]
->```plantuml
+>``` plantuml
 >@startuml
 >class Factuur 
 >class Factuurlijn
@@ -99,7 +99,7 @@ De zin *"Een factuur bevat een `logo`, een `uniek nummer`, is steeds voor één 
 Vanuit de oorspronkelijke vraag komen we dan bij het volgende diagram uit:
 
 >[!NOTE|icon:fas fa-info-circle|label:Eigenschappen]
->```plantuml
+>``` plantuml
 >@startuml
 >class Factuur {
 >  nummer: string
