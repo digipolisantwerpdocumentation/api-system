@@ -66,13 +66,13 @@ Bij **`noCount`** worden de beide totalen niet terug gegeven en is de link naar 
         "description": "Retrieve a paged result list of Sales Invoices",
         "parameters": [
           {
-            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/parameters/Page"
+            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/Page"
           },
           {
-            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/parameters/Pagesize"
+            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/Pagesize"
           },
           {
-            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/parameters/PagingStrategy"
+            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/PagingStrategy"
           }
         ],
       }
@@ -82,7 +82,7 @@ Bij **`noCount`** worden de beide totalen niet terug gegeven en is de link naar 
 
 Herbruikbare definities van oa. paginatie parameters vind je terug in de [/components](/components) map hier op GitHub. Om er vanuit jouw swagger file ernaar te refereren kan je volgende link gebruiken:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/parameters/Page`
+`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/parameters/Page`
 
 Vervang daar waar nodig het deel achter de `#` in deze url.
 
@@ -145,7 +145,7 @@ Dit alles resulteert in volgende structuur in de response message om pagina link
 
 **Tip:** Net zoals de **`page`** en **`pagesize`** parameter, hebben we deze **_links** data structuur definitie ook reeds voorgemaakt op:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/schema/Links`
+`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Links`
 
 
 Bij het ophalen van collections dient bovenstaande structuur steeds aanwezig te zijn in een response message. Dit maakt dat de eigenlijke resources in een wrapper object komen te zitten in het response bericht.  
@@ -190,7 +190,7 @@ Voorbeeld bij `paging-strategy=noCount` :
 
 **Tip:** Deze **_page** data structuur definitie is reeds voorgemaakt op:
 
-`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/schema/Page`
+`https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Page`
 
 
 Alle aspecten van paginatie samengevoegd geeft dit volgende response wrapper message voor paginatie:
@@ -281,7 +281,7 @@ De swagger voor bovenstaand voorbeeld gebruik makende van de generieke definitie
         "type": "object",
         "properties": {
           "_links": {
-            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/schema/Links"
+            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Links"
           },
           "_embedded": {
             "type": "object",
@@ -294,7 +294,7 @@ De swagger voor bovenstaand voorbeeld gebruik makende van de generieke definitie
             }
           },
           "_page": {
-            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/components/paging.yaml#/components/schema/Page"
+            "$ref": "https://raw.githubusercontent.com/digipolisantwerpdocumentation/api-system/master/components/paging.yaml#/components/schema/Page"
           }
 ```
 
