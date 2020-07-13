@@ -41,7 +41,7 @@ Dit verlaagt immers de leesbaarheid.
 "middleName" : null
 ```
 
-##### Toon lege waardes in de resource representatie <span class="rule-ref">R-JS-007</span> :id=R-JS-007
+#### Toon lege waardes in de resource representatie <span class="rule-ref">R-JS-007</span> :id=R-JS-007
 ``` json
 "middleName" : "",
 "orders" : []
