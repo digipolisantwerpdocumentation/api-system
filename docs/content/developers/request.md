@@ -21,15 +21,15 @@ Gebruik steeds de juiste HTTP verbs voor de bijhorende request zoals weergegeven
 met [RFC7231](https://tools.ietf.org/html/rfc7231).
 
 
-HTTP Verb | Safe | Idempotent | Toepassing                                                                                                                                             | Request
---------- | ---- | ---------- | ----------                                                                                                                                             | ------- 
-GET       | Ja   | Ja         | Voor het ophalen van de representatie van een resource. Opeenvolgende calls hebben geen invloed op de state van de resource.                           | Is steeds leeg
-HEAD      | Ja   | Ja         | Voor het ophalen van de headers van een resource (om bv de aanwezigheid van een resource te controleren zonder de volledige payload te moeten ontvangen). Opeenvolgende calls hebben geen invloed op de state van de resource.                           | Is steeds leeg
-PUT       | Neen | Ja         | Voor het vervangen van een bestaande resource. Indien de resource niet bestaat, wordt deze aangemaakt.                                                 | Representatie van de te vervangen resource
-POST      | Neen | Neen       | Voor het aanmaken van een nieuwe resource binnen een collection.                                                                                       | Representatie van de aan te maken resource (optionele velden niet)
-POST      | Neen | Neen       | Voor het uitvoeren van een activity of controller (=command) resource.                                                                                 | Representatie van info voor controller
-PATCH     | Neen | Neen       | Voor het updaten van een set velden binnen een bestaande resource. Enkel de opgegeven velden worden gewijzigd. Alle andere velden blijven ongewijzigd. | Enkel die velden van de resource die men wenst te updaten
-DELETE    | Neen | Ja         | Voor het verwijderen van een resource binnen een collection.                                                                                           | Is steeds leeg
+HTTP Verb | Safe | Idempotent | Toepassing                                                                                                                                                                                                                     | Request
+--------- | ---- | ---------- | ----------                                                                                                                                                                                                                     | ------- 
+GET       | Ja   | Ja         | Voor het ophalen van de representatie van een resource. Opeenvolgende calls hebben geen invloed op de state van de resource.                                                                                                   | Is steeds leeg
+HEAD      | Ja   | Ja         | Voor het ophalen van de headers van een resource (om bv de aanwezigheid van een resource te controleren zonder de volledige payload te moeten ontvangen). Opeenvolgende calls hebben geen invloed op de state van de resource. | Is steeds leeg
+PUT       | Neen | Ja         | Voor het vervangen van een bestaande resource. Indien de resource niet bestaat, wordt deze aangemaakt.                                                                                                                         | Representatie van de te vervangen resource
+POST      | Neen | Neen       | Voor het aanmaken van een nieuwe resource binnen een collection.                                                                                                                                                               | Representatie van de aan te maken resource (optionele velden niet)
+POST      | Neen | Neen       | Voor het uitvoeren van een activity of controller (=command) resource.                                                                                                                                                         | Representatie van info voor controller
+PATCH     | Neen | Neen       | Voor het updaten van een set velden binnen een bestaande resource. Enkel de opgegeven velden worden gewijzigd. Alle andere velden blijven ongewijzigd.                                                                         | Enkel die velden van de resource die men wenst te updaten
+DELETE    | Neen | Ja         | Voor het verwijderen van een resource binnen een collection.                                                                                                                                                                   | Is steeds leeg
 
 
 **Safe** methodes zijn methodes dewelke de resource representatie niet wijzigen. Een safe methode mag nooit gebruikt worden om de state van een resource te wijzigen.

@@ -6,17 +6,17 @@ Paginatie informatie wordt **steeds** terug gegeven bij het ophalen van collecti
 #### Gebruik altijd het vastgelegde pagineringsmodel bij het ophalen van collecties <span class="rule-ref">R-PC-002</span> :id=R-PC-002
 Vanuit consumer standpunt is het noodzakelijk dat volgende informatie in de response wordt gegeven om voldoende informatie te bekomen rond de pagina's:
 
-| Info                         |                             | Verplicht                       |
-| ---------------------------- | --------------------------- | ------------------------------- |
-| Link naar de eerste pagina   |                             | Ja                              |
-| Link naar de laatste pagina  |                             | Ja                              |
-| Link naar de vorige pagina   |                             | Ja, behalve voor eerste pagina  |
-| Link naar de volgende pagina |                             | Ja, behalve voor laatste pagina |
-| Extra metadata :             |                             |                                 |
-|                              | Huidig paginanummer         | Ja                              |
-|                              | Aantal elementen per pagina | Ja                              |
-|                              | Totaal aantal elementen     | Afhankelijk van paging-strategy |
-|                              | Totaal aantal pagina's      | Afhankelijk van paging-strategy |
+Info                         |                             | Verplicht                      
+---------------------------- | --------------------------- | -------------------------------
+Link naar de eerste pagina   |                             | Ja                             
+Link naar de laatste pagina  |                             | Ja                             
+Link naar de vorige pagina   |                             | Ja, behalve voor eerste pagina 
+Link naar de volgende pagina |                             | Ja, behalve voor laatste pagina
+Extra metadata :             |                             |                                
+                             | Huidig paginanummer         | Ja                             
+                             | Aantal elementen per pagina | Ja                             
+                             | Totaal aantal elementen     | Afhankelijk van paging-strategy
+                             | Totaal aantal pagina's      | Afhankelijk van paging-strategy
 
 
 In veel paginatierichtlijnen wordt gevraagd om het totaal aantal pagina's en/of elementen altijd terug te geven zodat de gebruiker exact kan geïnformeerd worden over de lengte van de opgevraagde lijst. Dit houdt in dat er impliciet altijd een 'count' mechanisme moet geïmplementeerd worden wat bij lijsten van grote aantallen tot een merkbare vertraging kan leiden in het opvragen van de lijst.
@@ -110,13 +110,13 @@ Het reserved keyword **\_links** wordt gebruikt om links naar andere pagina's te
 In de toekomst kan dit worden uitgebreid om links naar andere objecten aan te duiden indien hypermedia APIs worden gedefinieerd. Binnen
 Digipolis wordt gekozen om volgende link objecten te gebruiken voor paginatie:
 
-| link object | omschrijving                                                | opmerking |
-| ----------- | ----------------------------------------------------------- | --------- |
-| self        | bevat een link naar de pagina zelf                          |                                                                     |
-| first       | bevat een link naar de eerste pagina binnen de collection   | page=1                                                              |
-| last        | bevat een link naar de laatste pagina binnen de collection  | bij **`noCount`** paging strategie : page=last                                   | 
-| prev        | bevat een link naar de vorige pagina binnen de collection   | wordt weggelaten indien er geen vorige pagina is (eerste pagina)<br />page=huidige pagina - 1    |
-| next        | bevat een link naar de volgende pagina binnen de collection | wordt weggelaten indien er geen volgende pagina is (laatste pagina)<br />page=huidige pagina + 1<br />bij **`noCount`** paging strategie kan dit naar een lege pagina verwijzen |
+link object | omschrijving                                                | opmerking
+----------- | ----------------------------------------------------------- | ---------
+self        | bevat een link naar de pagina zelf                          | 
+first       | bevat een link naar de eerste pagina binnen de collection   | page=1
+last        | bevat een link naar de laatste pagina binnen de collection  | bij **`noCount`** paging strategie : page=last
+prev        | bevat een link naar de vorige pagina binnen de collection   | wordt weggelaten indien er geen vorige pagina is (eerste pagina)<br />page=huidige pagina - 1
+next        | bevat een link naar de volgende pagina binnen de collection | wordt weggelaten indien er geen volgende pagina is (laatste pagina)<br />page=huidige pagina + 1<br />bij **`noCount`** paging strategie kan dit naar een lege pagina verwijzen
 
 De HAL specificatie definieert dat elk van deze link objecten verplicht de href property moet hebben. Daarnaast zijn er ook nog een aantal optionele properties gedefinieerd binnen de standaard. Deze hebben geen toegevoegde waarde bij het weergeven van pagina informatie en worden dan ook niet toegevoegd voor elk van bovenvermelde link objecten.
 
