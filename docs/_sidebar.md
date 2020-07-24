@@ -1,7 +1,7 @@
 <!-- docs/_sidebar.md -->
 
 * Start
-    * [Getting Started](/README)
+    * [Getting Started](/README.md)
     * [Contributing](/content/contributing.md)
 
 * API basics
@@ -21,7 +21,7 @@
     * [Versionering](/content/developers/versioning.md)
     * [Langdurende operaties](/content/developers/long-running.md)
     * [Cheat Sheet (TL;DR)](/content/developers/cheat-sheet.md)
-    * [Change log](/content/developers/document-history.md)
+    * [Change log](/content/developers/change-log.md)
 
 * Voor Designers
 
