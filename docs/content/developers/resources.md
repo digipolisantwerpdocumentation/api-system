@@ -11,7 +11,7 @@ https://{hostname}/{namespace}/{vx}/{resource-URI}
 API URI's dienen steeds te worden geversioneerd (**/vx**). Aangezien wordt gekozen voor het root namespace versioneringsmodel, dient de major versie steeds te worden opgenomen in de URI en dit achter de namespace.  
 De **namespace** is een enkelvoudig zelfstandig naamwoord dat het onderwerp van de API omschrijft, gezien vanuit het standpunt van de API consumer.
 
-Opmerking : op de API gateway bestaat de namespace uit organization/apiname
+> Opmerking : op de API gateway bestaat de namespace uit organization/apiname
 
 De **resource-URI** duidt op het eigenlijke resource model
 
@@ -19,6 +19,15 @@ Dit resulteert in onderstaand totaal voorbeeld :
 ```
 https://api-gateway/digipolis/business-party/v1/…
 ```
+
+#### Voorzie altijd de parent id(s) voor resources in een subcollection <span class="rule-ref">R-US-003</span> :id=R-US-003
+Een uri voor een resource in een subcollection bevat steeds de id(s) van de parent collection(s) bij de betreffende parent collection.
+
+> Uitzondering : event resources (groepering)
+
+voorbeeld : GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contracts/42
+
+
 
 ### Naming conventions
 #### Gebruik zelfstandige naamwoorden voor resources, behalve voor controllers <span class="rule-ref">R-NC-001</span> :id=R-NC-001

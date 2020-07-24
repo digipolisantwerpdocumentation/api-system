@@ -35,7 +35,9 @@ Swagger v2.0, JSON
 
 -   URI Structuur
     -   https://{hostname}/{namespace}/{vx}/{resource-URI}
-    -   opm. : op de API gateway zal de namespace bestaan uit organization/apiname
+        -   opm. : op de API gateway zal de namespace bestaan uit organization/apiname
+    -   versioneer API URI
+    -   parent id(s) voor resources in een subcollectie
 -   afspraken
     -   altijd in het meervoud (uitzondering : controllers (=commands), status resource, monitoring resource)
     -   lowercase (zowel URI als query parameters)
