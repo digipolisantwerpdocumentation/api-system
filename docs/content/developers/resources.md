@@ -21,7 +21,7 @@ https://api-gateway/digipolis/business-party/v1/…
 ```
 
 #### Voorzie altijd de parent id(s) voor resources in een subcollection <span class="rule-ref">R-US-003</span> :id=R-US-003
-Een uri voor een resource in een subcollection bevat steeds de id(s) van de parent collection(s) bij de betreffende parent collection.
+Een URI voor een resource in een subcollection bevat steeds de id(s) van de parent collection(s) bij de betreffende parent collection.
 
 > Uitzondering : event resources (groepering)
 
