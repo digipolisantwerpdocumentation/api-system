@@ -33,6 +33,6 @@ Heb je nog een vraag of een idee om iets te verbeteren/bij te dragen? Kijk even 
 
 ## Changelog
 
-Bekijk de changelog voor de [API Requirements](/content/developers/document-history.md)
+Bekijk de changelog voor de [API Requirements](/content/developers/change-log.md)
 
-Bekijk de changelog voor de [API Design Guide](/content/designers/document-history.md)
+Bekijk de changelog voor de [API Design Guide](/content/designers/change-log.md)
