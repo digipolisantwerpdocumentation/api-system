@@ -27,7 +27,13 @@ Een URI voor een resource in een subcollection bevat steeds de id(s) van de pare
 
 voorbeeld : GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contracts/42
 
+#### Operaties (verbs) worden uitgevoerd op resources in de laatste collectie van het URI pad <span class="rule-ref">R-US-004</span> :id=R-US-004
+Een operatie wordt uitgevoerd op één of meerdere resources in een collectie. De collectie waarop de operatie betrekking heeft, is de laatste collectie in de collectie hierarchie; dit wordt aangegeven door in het URI pad de betreffende collectie als laatste te zetten.
 
+In onderstaand voorbeeld haal je contract 42 op van business-party 6532.
+``` http
+ GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contracts/42
+```
 
 ### Naming conventions
 #### Gebruik zelfstandige naamwoorden voor resources, behalve voor controllers <span class="rule-ref">R-NC-001</span> :id=R-NC-001
