@@ -32,7 +32,7 @@ GET https://api-gateway/digipolis/business-party/v1/business-parties/6532/contra
 ```
 
 #### Operaties (verbs) worden uitgevoerd op resources in de laatste collectie van het URI pad <span class="rule-ref">R-US-004</span> :id=R-US-004
-Een operatie wordt uitgevoerd op één of meerdere resources in een collectie. De collectie waarop de operatie betrekking heeft, is de laatste collectie in de collectie hierarchie; dit wordt aangegeven door in het URI pad de betreffende collectie als laatste te zetten.
+Een operatie wordt uitgevoerd op één of meerdere resources in een collectie. De collectie waarop de operatie betrekking heeft, is de laatste collectie in de collectie hiërarchie; dit wordt aangegeven door in het URI pad de betreffende collectie als laatste te zetten.
 
 In onderstaand voorbeeld haal je contract 42 op van business-party 6532.
 ``` http
