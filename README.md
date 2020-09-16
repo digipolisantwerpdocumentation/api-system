@@ -14,5 +14,5 @@ Door API's consistent te maken volgens bepaalde afspraken, maken we het veel een
 - tools
 - etc
 
-Ga naar het [Digipolis API system](https://digipolisantwerpdocumentation.github.io/api-system/)
+Ga naar het [Digipolis API system](https://acpaas-api.digipolis.be/)
 
