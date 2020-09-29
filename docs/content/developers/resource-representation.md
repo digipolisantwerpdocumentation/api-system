@@ -6,6 +6,11 @@
 
 Om onze API's zo breed mogelijk bruikbaar te maken worden ze in het **Engels** gemaakt.
 
+### Formaat
+#### Formaat API documentatie op de API Engine is Swagger 2.0 <span class="rule-ref">R-FM-001</span> :id=R-FM-001
+De huidige API engine (Store en Publisher) ondersteunt enkel Swagger 2.0.
+Indien je jouw API hierop publiceert, moet je dus het Swagger 2.0 formaat volgen.
+
 ### JSON conventies
 
 Hanteer onderstaande conventies voor berichten die JSON als payload formaat hebben.
