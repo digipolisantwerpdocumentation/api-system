@@ -10,7 +10,7 @@
 #### Toegevoegd
 - api system
 - api designers guide
-- visualizatie met Github Pages
+- visualizatie met Github Pages en gebruik van [docsify](https://docsify.js.org/)
 
 #### Gewijzigd
 - api requirements gemerged in api system
