@@ -4,6 +4,7 @@ Het API system van Digipolis is een verzameling van zowel informatie als hulpmid
 
 Ben je een `Developer`, kijk dan zeker naar de [API requirements](/content/developers/intro.md), de [API Validator](/content/tools/validate.md) en de [API Generator](/content/tools/generators.md)
 
+!> De huidige API engine (Store en Publisher) ondersteunt enkel Swagger 2.0. Indien je jouw API hierop publiceert, moet je dus het Swagger 2.0 formaat volgen.
 
 Ben je een `Designer`, of wil je leren hoe je een API moet ontwerpen, lees dan de [design hoofdstukken](/content/designers/intro.md). 
 
