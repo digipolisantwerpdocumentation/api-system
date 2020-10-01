@@ -13,10 +13,10 @@ Link naar de laatste pagina  |                             | Ja
 Link naar de vorige pagina   |                             | Ja, behalve voor eerste pagina 
 Link naar de volgende pagina |                             | Ja, behalve voor laatste pagina
 Extra metadata :             |                             |                                
-                             | Huidig paginanummer         | Ja                             
-                             | Aantal elementen per pagina | Ja                             
-                             | Totaal aantal elementen     | Afhankelijk van paging-strategy
-                             | Totaal aantal pagina's      | Afhankelijk van paging-strategy
+&nbsp;                       | Huidig paginanummer         | Ja                             
+&nbsp;                       | Aantal elementen per pagina | Ja                             
+&nbsp;                       | Totaal aantal elementen     | Afhankelijk van paging-strategy
+&nbsp;                       | Totaal aantal pagina's      | Afhankelijk van paging-strategy
 
 
 In veel paginatierichtlijnen wordt gevraagd om het totaal aantal pagina's en/of elementen altijd terug te geven zodat de gebruiker exact kan geïnformeerd worden over de lengte van de opgevraagde lijst. Dit houdt in dat er impliciet altijd een 'count' mechanisme moet geïmplementeerd worden wat bij lijsten van grote aantallen tot een merkbare vertraging kan leiden in het opvragen van de lijst.
