@@ -31,7 +31,7 @@ De RFC schrijft onderstaande specificaties voor.
 
 Het response error object kan volgende velden bevatten:
 
--   **Type (string):** Een URI referentie (absoluut of relatief)[\[RFC3986\]](https://mnot.github.io/I-D/http-problem/#RFC3986) dewelke het probleem type identificeert. Indien verwezen wordt naar deze URI dient human-readable (HTML) documentatie voor het probleem te worden weergegeven.
+-   **Type (string):** Een URI referentie (absoluut of relatief)[\[RFC3986\]](https://tools.ietf.org/html/rfc3986) dewelke het probleem type identificeert. Indien verwezen wordt naar deze URI dient human-readable (HTML) documentatie voor het probleem te worden weergegeven.
 -   **Title (string):** Een korte, human-readable omschrijving van het probleem. De title die hier wordt weergegeven mapt 1-op-1 met een omschrijving van het hierboven vernoemde Type.
 -   **Status (number):** de HTTP status code. De reden van vermelding in het error object is omdat eventuele intermediaries zoals gateways de HTTP status code steeds kunnen wijzigen.
 -   **Detail (string):** Meer specifieke human-readable detail informatie die specifiek is voor deze instantie van het probleem.
@@ -44,7 +44,7 @@ Hierbij wordt gebruik gemaakt van het **`application/problem+json`** media type 
 
 Verplicht te gebruiken velden in het error response zodat de API consumer het probleem op een logische manier kan begrijpen:
 
--   **Type (string)**: Een URI referentie (absoluut of relatief) [\[RFC3986\]](https://mnot.github.io/I-D/http-problem/#RFC3986) dewelke het probleem type identificeert. Indien verwezen wordt naar deze URI dient human-readable (HTML) documentatie voor het probleem te worden weergegeven.
+-   **Type (string)**: Een URI referentie (absoluut of relatief) [\[RFC3986\]](https://tools.ietf.org/html/rfc3986) dewelke het probleem type identificeert. Indien verwezen wordt naar deze URI dient human-readable (HTML) documentatie voor het probleem te worden weergegeven.
 -   **Title (string)**: Een korte, human-readable omschrijving van het probleem. De title die hier wordt weergegeven mapt 1-op-1 met een omschrijving van het hierboven vernoemde Type.
 
 Daarnaast worden volgende velden ook in het antwoord verwacht:
