@@ -75,7 +75,7 @@ Dit omdat bepaalde frameworks niet goed overweg kunnen met native arrays
 
 ### Datums en timestamps
 #### Formatteer datums en timestamps volgens RFC3339 <span class="rule-ref">R-DT-001</span> :id=R-DT-001
-Formatteer datums en timestamps steeds volgens [RFC3339](https://www.ietf.org/rfc/rfc3339.txt). JSON definieert immers geen standaard formaat voor datums en timestamps.
+Formatteer datums en timestamps steeds volgens [RFC3339](https://tools.ietf.org/html/rfc3339). JSON definieert immers geen standaard formaat voor datums en timestamps.
 
 > RFC3339 volgt de ISO 8601 standaard maar heeft enkele optimalisaties voor het internet en machine to machine communicatie. Bijgevolg is deze ideaal voor REST API's)
 
