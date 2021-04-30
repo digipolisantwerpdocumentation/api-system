@@ -25,7 +25,7 @@ Algemeen kan worden aangenomen dat een error response minimaal volgende informat
 -   Een korte omschrijving van de foutboodschap in een human-readable formaat
 -   Een link dewelke wijst naar meer documentatie over de fout
 
-De basis van het gebruikte error model bij digipolis is [Problem Details for HTTP APIs (RFC7807)](https://datatracker.ietf.org/doc/rfc7807/)
+De basis van het gebruikte error model bij digipolis is [Problem Details for HTTP APIs (RFC7807)](https://tools.ietf.org/html/rfc7807)
 
 De RFC schrijft onderstaande specificaties voor.
 
