@@ -1,8 +1,8 @@
 ## Community
 
-!> **Todo:** Deze contributing guide is een copy/paste van ACPaaS UI. We moeten hier nog over nadenken en aanpassen.
+!> **Todo:** Deze contributing guide is een copy/paste van Antwerp UI. We moeten hier nog over nadenken en aanpassen.
 
-ACPaaS UI is a community-driven project, where everyone is free to use and contribute. We would love for you to contribute too. Here are some tips to help you along.
+Antwerp UI is a community-driven project, where everyone is free to use and contribute. We would love for you to contribute too. Here are some tips to help you along.
 
 ### Be kind
 
@@ -12,11 +12,11 @@ Even if we don't explicitly mention it in every repo, we believe that empathy he
 
 Our repo's are found on GitHub, and generally, unless otherwise specified, we prefer GitHub Flow and Pull Requests as the way to receive contributions. Do check the contributing.md file in every repo for more details, or for exceptions to this rule.
 
-If you're unsure of how to contribute, don't hesitate to ask on the #acpaas-ui-ngx or #acpaas-ui-react slack channel. You can easily join our DigAnt Café slack community here.
+If you're unsure of how to contribute, don't hesitate to ask on the #antwerp-ui-ngx or #antwerp-ui-react slack channel. You can easily join our DigAnt Café slack community here.
 
 ### Maintainers
 
-ACPaaS UI consists of many different repo's, each with different maintainers. Check the maintainers page to find out who the maintainer is of any particular repo. The maintainer's job consists of:
+Antwerp UI consists of many different repo's, each with different maintainers. Check the maintainers page to find out who the maintainer is of any particular repo. The maintainer's job consists of:
 
 Answering questions
 Reviewing contributions
@@ -28,9 +28,9 @@ To make the job of the maintainer easier, we like it when bugs and feature reque
 
 ### Roadmap
 
-The direction of the different parts of ACPaaS UI is not always clear. To discuss roadmap and policy these are the best places:
+The direction of the different parts of Antwerp UI is not always clear. To discuss roadmap and policy these are the best places:
 
-Quick questions are best asked on the #acpaas-ui-ngx slack channel or #acpaas-ui-react slack channel.
+Quick questions are best asked on the #acantwerppaas-ui-ngx slack channel or #antwerp-ui-react slack channel.
 Longer questions specific to a particular repo are best reported as issues on that repo.
-Longer questions about ACPaaS UI in general can be reported as issues on the ACPaaS UI repo.
-If we know something about the roadmap of a particular repo then it will be in the README of that repo. Any information on the overall direction of ACPaaS UI will be in the main ACPaaS UI README.
+Longer questions about Antwerp UI in general can be reported as issues on the Antwerp UI repo.
+If we know something about the roadmap of a particular repo then it will be in the README of that repo. Any information on the overall direction of Antwerp UI will be in the main Antwerp UI README.
