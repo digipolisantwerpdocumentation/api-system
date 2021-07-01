@@ -93,7 +93,7 @@ Om paginatie informatie naar de consumer terug te sturen baseren we ons op de HA
 
 <http://stateless.co/hal_specification.html>
 
-<https://datatracker.ietf.org/doc/draft-kelly-json-hal/>
+<https://datatracker.ietf.org/doc/html/draft-kelly-json-hal-08>
 
 De HAL specificatie is gedefinieerd voor clients die doorheen hun resources navigeren door middel van links en die dus willen streven naar een HATEOAS (Hypermedia As The Engine Of Application State) hypermedia API ([Richardson Maturity Model Level
 3](http://martinfowler.com/articles/richardsonMaturityModel.html#level3)).
