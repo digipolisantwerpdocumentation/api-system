@@ -163,6 +163,9 @@ Dit resulteert in volgende structuur.
 }
 ```
 
+!> De key **resourceList** mag je vervangen door een key die de array list beschrijft.<br/>
+**resourceList** of de vervangende key is verplicht (onder **\_embedded**).
+
 Het **\_page** reserved keyword vormt geen onderdeel van de HAL specificatie, maar is extra metadata die in de response message komt om
 een indicatie te krijgen van de huidige paginanummer, aantal elementen per pagina, het totaal aantal pagina's en het totaal aantal elementen en vereenvoudigt de bewerkingen langs consumer kant om deze informatie te bekomen. Bij **`paging-strategy=noCount`** worden `totalElements` en `totalPages` weg gelaten.  
   
