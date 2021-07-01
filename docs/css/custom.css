@@ -6,6 +6,11 @@ section.cover .cover-main blockquote {
     border-left: none;
 }
 
+section.cover .cover-main>p:last-child a:last-child {
+    background-color: #0057b7;
+    color: #fff;
+}
+
 section.cover .cover-main>p:last-child a {
     border-radius: 0rem;
     border: 1px solid white;
@@ -76,4 +81,16 @@ body, input {
     line-height: 1.125rem;
     min-height: 1.125rem;
     padding: 0 0.375rem;
+}
+
+html:root {
+    --theme-color: #0057b7;
+}
+
+.app-nav a {
+    color: white;
+}
+
+.app-nav a:hover {
+    color: grey;
 }

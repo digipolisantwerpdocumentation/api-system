@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-![logo](/_media/acpaas-logo.png)
+![logo](/_media/a-logo.svg)
 
 # Digipolis API System <small>7.0.0</small>
 
@@ -13,4 +13,4 @@
 <!-- [GitHub](https://github.com/digipolisantwerpdocumentation/api-system) -->
 [Get Started](#getting-started)
 
-![color](#322A56)
+![color](#0057b7)
