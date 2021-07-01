@@ -26,13 +26,8 @@ section.cover .cover-main>p:last-child a {
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
-    font-family: Titillium Web,Helvetica Neue,Helvetica,Arial,sans-serif;
     line-height: 1.1;
     margin: 0;
-}
-
-body, input {
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .sidebar, .sidebar-toggle {
@@ -47,7 +42,6 @@ body, input {
 }
 
 .search input {
-    font-family: -apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Arial,sans-serif;
     border: none !important;
     box-shadow: none !important;
 }
@@ -93,4 +87,8 @@ body, input {
 
 html:root {
     --theme-color: #0057b7
+}
+
+body {
+    color: white;
 }
