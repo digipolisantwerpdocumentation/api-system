@@ -1,14 +1,14 @@
 <!-- docs/_sidebar.md -->
 
 * Start
-    * [Getting Started](/README.md)
+    * [Getting started](/README.md)
     * [Contributing](/content/contributing.md)
 
 * API basics
     * [API](/content/common/api.md)
     * [REST introductie](/content/common/rest.md)
 
-* Voor Developers
+* Voor developers
     * [Intro](/content/developers/intro.md)
     * [Resource representatie](/content/developers/resource-representation.md)
     * [Resources](/content/developers/resources.md)
@@ -20,10 +20,10 @@
     * [Error handling](/content/developers/error-handling.md)
     * [Versionering](/content/developers/versioning.md)
     * [Langdurende operaties](/content/developers/long-running.md)
-    * [Cheat Sheet (TL;DR)](/content/developers/cheat-sheet.md)
-    * [Change log](/content/developers/change-log.md)
+    * [Cheat sheet (TL;DR)](/content/developers/cheat-sheet.md)
+    * [Changelog](/content/developers/changelog.md)
 
-* Voor Designers
+* Voor designers
 
     * [Intro](/content/designers/intro.md)
     * [Basis begrippen](/content/designers/basic-concepts.md)
@@ -34,7 +34,7 @@
     * [Patterns](/content/designers/patterns.md)
     * [Todo](/content/designers/todo.md)
 
-* Tools & Downloads
+* Tools & downloads
 
     * [Validator](/content/tools/validate.md)
     * [Generators](/content/tools/generators.md)
@@ -42,7 +42,7 @@
 
 * Tips
 
-    * [Postman Tips](/content/common/postman-tips.md)
+    * [Postman tips](/content/common/postman-tips.md)
     * [Goede documentatie schrijven](/content/common/swagger-docs.md)
     <!-- * [Glossary](/_glossary.md) -->
 
