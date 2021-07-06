@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-<img src="http://cdn.antwerpen.be/digipolis_branding_scss/5.0.0/assets/images/digipolis-logo.svg" width="144" height="72">
+<img src="http://cdn.antwerpen.be/digipolis_branding_scss/5.0.0/assets/images/digipolis-logo.svg" alt="" width="144" height="72">
 
 # Digipolis API System <small>v7.0.0</small>
 
