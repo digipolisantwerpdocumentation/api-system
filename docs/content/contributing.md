@@ -10,13 +10,13 @@ Even if we don't explicitly mention it in every repo, we believe that empathy he
 
 ### GitHub
 
-Our repo's are found on GitHub, and generally, unless otherwise specified, we prefer GitHub Flow and Pull Requests as the way to receive contributions. Do check the contributing.md file in every repo for more details, or for exceptions to this rule.
+Our repositories are found on GitHub, and generally, unless otherwise specified, we prefer GitHub Flow and Pull Requests as the way to receive contributions. Do check the contributing.md file in every repo for more details, or for exceptions to this rule.
 
 If you're unsure of how to contribute, don't hesitate to ask on the #antwerp-ui-ngx or #antwerp-ui-react slack channel. You can easily join our DigAnt Café slack community here.
 
 ### Maintainers
 
-Antwerp UI consists of many different repo's, each with different maintainers. Check the maintainers page to find out who the maintainer is of any particular repo. The maintainer's job consists of:
+Antwerp UI consists of many different repositories, each with different maintainers. Check the maintainers page to find out who the maintainer is of any particular repo. The maintainer's job consists of:
 
 Answering questions
 Reviewing contributions

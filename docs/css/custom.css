@@ -1,28 +1,60 @@
+html:root {
+    --theme-color: #0057b7;
+}
+
 section.cover .cover-main, section.cover .cover-main .anchor span, section.cover .cover-main small {
     color: white
+}
+
+section.cover h1 small {
+    background-color: #cf0039;
+    bottom: 0;
+    margin-left: .75rem;
+    padding: 0.1875rem 0.25rem 0.25rem;
+    transform: translateY(-0.75rem);
+}
+
+.cover-main > img {
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+section.cover .cover-main {
+    position: static;
 }
 
 section.cover .cover-main blockquote {
     border-left: none;
 }
 
-section.cover .cover-main>p:last-child a:last-child {
-    background-color: #0057b7;
-    color: #fff;
+section.cover .cover-main p:last-child a:last-child {
+    background-color: #fff;
+    color: var(--theme-color);
 }
 
-section.cover .cover-main>p:last-child a {
-    border-radius: 0rem;
-    border: 1px solid white;
-    box-sizing: border-box;
-    color: white;
+section.cover .cover-main > p:last-child a {
+    border: none;
+    border-radius: 0;
     display: inline-block;
-    font-size: 1.05rem;
-    letter-spacing: .1rem;
-    margin: .5rem 1rem;
-    padding: .75em 2rem;
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: normal;
+    margin: .75rem 1.5rem;
+    padding: .875rem 1.5rem;
     text-decoration: none;
-    transition: all .15s ease;
+    transition: background-color 200ms ease-in-out;
+}
+
+section.cover .cover-main > p:last-child a:last-child:hover {
+    background-color: #ebf2f9;
+    color: var(--theme-color);
+    opacity: 1;
+}
+
+a.anchor,
+.anchor span {
+    color: #141414;
 }
 
 .h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
@@ -30,39 +62,154 @@ section.cover .cover-main>p:last-child a {
     margin: 0;
 }
 
-.sidebar, .sidebar-toggle {
-    background-color: rgb(243, 243, 243);
+.sidebar {
+    border-right-color: #949494;
+    color: #141414;
 }
 
-.search {
-    padding: 10px !important;
-    background-color: rgb(243, 243, 243);
-    border-bottom: none;
-    margin-top: 11px;
+.sidebar {
+    background-color: #f3f3f3;
+}
+
+.sidebar > h1 {
+    text-align: left;
+    margin-left: 15px;
+}
+
+.sidebar ul li.active > a {
+    border: none;
+}
+
+.sidebar ul li a {
+    color: var(--theme-color);
+    font-size: 16px;
+}
+
+.sidebar li > p {
+    margin-top: 24px;
+}
+
+.sidebar .sidebar-nav {
+    padding-bottom: 72px;
+}
+
+
+.sidebar-toggle,
+body.close .sidebar-toggle {
+    background-color: var(--theme-color);
+    display: inline-block;
+    height: 48px;
+    transition: background-color 200ms ease-in-out;
+    width: 48px;
+}
+
+.sidebar-toggle:hover {
+    background-color: #004ea5;
+}
+
+.sidebar-toggle:hover .sidebar-toggle-button {
+    opacity: 1;
+}
+
+.sidebar-toggle span {
+    background-color: #fff;
+    margin: 3px 0 0 4px;
 }
 
 .search input {
-    border: none !important;
+    border: 1px solid #6f6f6f !important;
+    font-size: 1rem !important;
+    min-height: 3rem !important;
+    padding: 0 1.5rem !important;
+}
+
+.search input:focus {
     box-shadow: none !important;
 }
 
-.search input:focus { 
-    border: none !important;
-    box-shadow: none !important;
-}
-
-.sidebar>h1 {
-    text-align: left;
-    margin-left: 15px;
+.search input::-webkit-input-placeholder,
+.search input:-ms-input-placeholder,
+.search input::-moz-placeholder,
+.search input:-moz-placeholder {
+    color: #6f6f6f !important;
+    opacity: 1 !important;
+    text-overflow: ellipsis !important;
 }
 
 .markdown-section blockquote p {
     font-weight: normal;
 }
 
+.markdown-section a {
+    font-weight: normal;
+}
+
 .markdown-section h4 {
     font-size: 1.1rem;
     margin-top: 1.7rem;
+}
+
+.markdown-section ol,
+.markdown-section p,
+.markdown-section ul {
+    word-spacing: 0;
+}
+
+.markdown-section ol,
+.markdown-section p,
+.markdown-section ul {
+    line-height: 1.3;
+}
+
+.markdown-section p.tip:before {
+    content: none;
+}
+
+.markdown-section p.tip {
+    padding: .75rem;
+}
+
+.alert.callout {
+    border-radius: 0 !important;
+}
+
+.markdown-section code,
+.markdown-section pre {
+    background-color: #f3f3f3;
+    font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.markdown-section pre {
+    padding: .75rem;
+}
+
+.markdown-section pre > code {
+    padding: 0;
+}
+
+.markdown-section>:not(h1):not(h2):not(h3):not(h4):not(h5):not(h6) code {
+    font-size: .875rem;
+}
+
+.markdown-section code {
+    border-radius: 0;
+    color: #141414;
+    margin: 0;
+    padding: 0.125rem 0.375rem;
+}
+
+.docsify-copy-code-button {
+    font-family: 'Sun Antwerpen', sans-serif;
+    font-size: .875rem;
+    padding: 0 4px !important;
+}
+
+.docsify-copy-code-button .success,
+.docsify-copy-code-button .error {
+    background-color: #424242;
+    border-radius: 0;
+    padding: 1px 8px !important;
+    transform: translate(-15%,-50%) !important;
 }
 
 .rule-ref {
@@ -77,15 +224,25 @@ section.cover .cover-main>p:last-child a {
     padding: 0 0.375rem;
 }
 
-.app-nav a {
+.app-nav a,
+.app-nav a:link,
+.app-nav a:hover,
+.app-nav a:active,
+.app-nav a:visited {
     color: white;
+    text-decoration: underline;
 }
 
-.app-nav a:hover {
-    color: grey;
+.app-nav a:hover,
+.app-nav a:active,
+.app-nav a:focus {
+    text-decoration: none;
 }
 
-html:root {
-    --theme-color: #0057b7
+.github-corner svg {
+    fill: #000;
 }
 
+.footer {
+    text-align: center;
+}

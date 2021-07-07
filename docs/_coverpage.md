@@ -1,8 +1,8 @@
 <!-- _coverpage.md -->
 
-![logo](/_media/a-logo.svg)
+<img src="http://cdn.antwerpen.be/digipolis_branding_scss/5.0.0/assets/images/digipolis-logo.svg" alt="" width="144" height="72">
 
-# Digipolis API System <small>7.0.0</small>
+# Digipolis API System <small>v7.0.0</small>
 
 > A guide to design & build developer friendly API's
 
@@ -11,6 +11,6 @@
 - Valideren via de Open API Validator
 
 <!-- [GitHub](https://github.com/digipolisantwerpdocumentation/api-system) -->
-[Get Started](#getting-started)
+[Get Started](#main)
 
 ![color](#0057b7)
