@@ -1,8 +1,7 @@
 openapi: 3.0.1
 info:
   title: Paging
-  description: In this OAS document we describe the commonly used Paging parameters
-    as well as the links & pages schema's
+  description: In this OAS document we describe the commonly used Paging parameters as well as the links & pages schema's as specified in the [Digipolis API System](https://antwerp-api.digipolis.be/#/content/developers/paging)
   version: 1.0.0
 servers:
 - url: /
@@ -17,8 +16,7 @@ components:
       properties:
         size:
           type: integer
-          description: returns the size of a page provided in the pagesize query parameter
-            of the request
+          description: returns the size of a page provided in the pagesize query parameter of the request
           example: 10
         totalElements:
           type: integer
@@ -26,16 +24,13 @@ components:
           example: 34
         totalPages:
           type: integer
-          description: the total number of pages in the resulting array. This is calculated
-            with the given size value
+          description: the total number of pages in the resulting array. This is calculated with the given size value
           example: 4
         number:
           type: integer
-          description: return the page number provided in the page query parameter
-            of the request
+          description: return the page number provided in the page query parameter of the request
           example: 1
-      description: A generic model used to describe paging information when requesting
-        a list of resources.
+      description: A generic model used to describe paging information when requesting a list of resources.
     Links:
       type: object
       properties:
@@ -91,8 +86,7 @@ components:
     PagingStrategy:
       name: paging-strategy
       in: query
-      description: Specify the paging strategy, i.e. if totalPages and totalElements
-        should be included in the response output
+      description: Specify the paging strategy, i.e. if totalPages and totalElements should be included in the response output
       schema:
         type: string
         default: noCount
