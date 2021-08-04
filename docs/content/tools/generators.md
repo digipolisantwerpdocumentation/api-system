@@ -7,7 +7,7 @@ Er zijn 2 soorten generators
 
 ## Nieuwe Open API documenten
 
-https://github.com/digipolisantwerp/openapi-generator
+https://github.com/eriklenaerts/openapi-generator
 
 ## Generate Client SDK's
 
